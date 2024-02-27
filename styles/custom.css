@@ -1,9 +1,0 @@
-.slick-slide {
-    margin-right: 33px
-  }
-
-  @media screen and (max-width: 639px) {
-    .slick-slide {
-    margin-inline: 20px
-    }
-  }

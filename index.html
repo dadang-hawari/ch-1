@@ -3,28 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MDH Car Rental</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-
-    <link rel="stylesheet" href="styles/custom.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <script src="./js/utils.js"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/custom.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
+  
   <body class="font-['Inter, sans-serif'] font-normal">
     <!-- Header -->
     <header class="bg-primary">
-      <nav class="bg-primary shadow-sm flex justify-between py-6 px-16 max-md:px-5 fixed w-full z-50">
+      <nav class="bg-primary shadow-sm flex justify-between py-6 px-20 max-lg:px-10 max-md:px-5 fixed w-full z-50">
         <div class="logo">
-          <a href="#" ><h2>Car Rental.</h2></a>
+          <a href="#" ><h1 class="font-bold">MDH Car Rental</h1></a>
         </div>
         <button type="button" id="openMenu" class="hidden max-md:block">
           <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" aria-hidden="true">
@@ -49,35 +44,38 @@
             <li><a href="#">Testimonial</a></li>
             <li><a href="#">FAQ</a></li>
             <li>
-              <a class="bg-[#5cb85f] text-white font-medium rounded-sm px-3 py-2" href="#">Register</a>
+              <a class="bg-green-cst text-white font-medium rounded-sm px-3 py-2" href="#">Register</a>
             </li>
           </ul>
         </div>
+
         <ul class="flex gap-6 max-md:hidden font-normal">
           <li><a href="#">Our Services</a></li>
           <li><a href="#">Why Us</a></li>
           <li><a href="#">Testimonial</a></li>
           <li><a href="#">FAQ</a></li>
           <li>
-            <a class="bg-[#5cb85f] text-white font-medium rounded-sm px-3 py-2" href="#">Register</a>
+            <a class="bg-green-cst text-white font-medium rounded-sm px-3 py-2" href="#">Register</a>
           </li>
         </ul>
       </nav>
+
+      <!-- Hero -->
       <section class="hero pt-24">
         <div class="grid grid-cols-2 max-md:grid-cols-1 ">
-          <div class="self-center pb-5 px-20 max-md:px-5 flex flex-col gap-y-4">
+          <div class="self-center pb-5 px-20 max-lg:px-10 max-md:px-5 flex flex-col gap-y-4">
             <h2 class="text-4xl md:text-3xl font-extrabold">
               Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)
             </h2>
             <p>
-              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              Selamat datang di Binar MDH Car Rental Kami menyediakan mobil
               kualitas terbaik dengan harga terjangkau. Selalu siap melayani
               kebutuhanmu untuk sewa mobil selama 24 jam.
             </p>
-            <button class="bg-[#5cb85f] text-white font-bold w-fit p-[10px] rounded-sm">Mulai Sewa Mobil</button>
+            <button class="bg-green-cst text-white font-bold w-fit p-[10px] rounded-sm">Mulai Sewa Mobil</button>
           </div>
-          <div class="hero-img justify-self-end mt-auto ps-3">
-            <img src="./img/img_car.png" alt="Mobil" class="align-bottom" />
+          <div class="hero-img justify-self-end mt-auto max-sm:mt-3 ps-3">
+            <img src="./img/img_car.png" alt="Mobil" />
           </div>
         </div>
       </section>
@@ -86,9 +84,9 @@
     <main>
       <!-- Services -->
       <section class="services mt-24 px-5">
-        <div class="container max-w-6xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-x-6">
+        <div class="container max-w-6xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-x-9">
           <div class="img-service">
-            <img src="./img/img_service.png" width="459" height="428" class="mx-auto" alt="Orang Memegang Device">
+            <img src="./img/img_service.png" width="459" height="428" class="mx-auto max-md:mb-2" alt="Orang Memegang Device">
           </div>
           <div class="desc flex flex-col gap-6">
             <h2 class="font-bold text-2xl pt-4 md:text-2">Best Best Car Rental for any kind of trip in (Lokasimu)!</h2>
@@ -96,27 +94,27 @@
             <ul class="flex flex-col gap-y-4">
               <li>
                 <p class="flex items-center">
-                  <i class="text-blue bg-[#CFD4ED] fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Dengan Supir di Bali 12 Jam
+                  <i class="text-blue-cst bg-gray-cst-bg fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Dengan Supir di Bali 12 Jam
                 </p>
               </li>
               <li>
                 <p class="flex items-center">
-                  <i class="text-blue bg-[#CFD4ED] fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Lepas Kunci di Bali 24 Jam
+                  <i class="text-blue-cst bg-gray-cst-bg fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Lepas Kunci di Bali 24 Jam
                 </p>
               </li>
               <li>
                 <p class="flex items-center">
-                  <i class="text-blue bg-[#CFD4ED] fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Jangka Panjang Bulanan
+                  <i class="text-blue-cst bg-gray-cst-bg fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Sewa Mobil Jangka Panjang Bulanan
                 </p>
               </li>
               <li>
                 <p class="flex items-center">
-                  <i class="text-blue bg-[#CFD4ED] fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Gratis Antar - Jemput Mobil di Bandara
+                  <i class="text-blue-cst bg-gray-cst-bg fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Gratis Antar - Jemput Mobil di Bandara
                 </p>
               </li>
               <li>
                 <p class="flex items-center">
-                  <i class="text-blue bg-[#CFD4ED] fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Layanan Airport Transfer / Drop In Out
+                  <i class="text-blue-cst bg-gray-cst-bg fa-solid fa-check rounded-full w-fit h-fit px-[5px] py-[4px] me-3"></i>Layanan Airport Transfer / Drop In Out
                 </p>
               </li>
             </ul>
@@ -131,22 +129,22 @@
           <p>Mengapa harus pilih Binar Car Rental?</p>
         </div>
         <ul class="flex flex-wrap gap-8 items-center justify-center mt-10">
-          <li class="flex flex-col gap-y-4 border-gray-custom border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
+          <li class="flex flex-col gap-y-4 border-gray-cst border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
             <img src="./img/icons/icon_complete.svg" alt="Icon Complete" height="32" width="32">
             <h3 class="font-bold text-base">Mobil Lengkap</h3>
             <p class="text-[14px]">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
           </li>
-          <li class="flex flex-col gap-y-4 border-gray-custom border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
+          <li class="flex flex-col gap-y-4 border-gray-cst border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
             <img src="./img/icons/icon_price.svg" alt="Icon Price" height="32" width="32">
             <h3 class="font-bold text-base">Harga Murah</h3>
             <p class="text-[14px]">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
           </li>
-          <li class="flex flex-col gap-y-4 border-gray-custom border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
+          <li class="flex flex-col gap-y-4 border-gray-cst border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
             <img src="./img/icons/icon_24hrs.svg" alt="Icon 24 Hours" height="32" width="32">
             <h3 class="font-bold text-base">Layanan Murah</h3>
             <p class="text-[14px]">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
           </li>
-          <li class="flex flex-col gap-y-4 border-gray-custom border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
+          <li class="flex flex-col gap-y-4 border-gray-cst border-[1px] rounded w-full h-full max-w-[268px] max-sm:max-w-[100%] max-h[196px] p-6">
             <img src="./img/icons/icon_professional.svg" alt="Icon Profesional" height="32" width="32">
             <h3 class="font-bold text-base">Sopir Profesional</h3>
             <p class="text-[14px]">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
@@ -161,9 +159,9 @@
           <p class="mt-4 mb-10">Berbagai reveiw positif dari para pelanggan kami</p>
         </div>
         <div class="carousel w-full mx-auto">
-          <div class="w-[619px]">
+          <div class="max-w-[619px]">
               <div class="bg-primary flex h-[270px] max-md:h-fit max-md:py-10  w-full items-center rounded-lg gap-x-4 p-5 max-md:flex-col max-md:justify-center">
-                  <img src="./img/img_photo.png" alt="Foto"  class="max-md:mb-4 mx-auto">
+                  <img src="./img/img_photo.png" alt="Foto" height="80" width="80" class="max-md:mb-4 mx-auto">
                   <div class="flex flex-col gap-y-2 max-w-[415px]">
                     <img src="img/icons/rate.svg" alt="rating" height="16" width="80" class="max-md:mx-auto">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
@@ -171,9 +169,9 @@
                   </div>
                 </div>
           </div>
-          <div class="w-[619px]">
+          <div class="max-w-[619px]">
               <div class="bg-primary flex h-[270px] max-md:h-fit max-md:py-10 w-full items-center rounded-lg gap-x-4 p-5 max-md:flex-col max-md:justify-center">
-                  <img src="./img/img_photo 2.png" alt="Foto"  class="max-md:mb-4 mx-auto">
+                  <img src="./img/img_photo 2.png" alt="Foto" height="80" width="80" class="max-md:mb-4 mx-auto">
                   <div class="flex flex-col gap-y-2 max-w-[415px]">
                     <img src="img/icons/rate.svg" alt="rating" height="16" width="80" class="max-md:mx-auto">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
@@ -181,9 +179,9 @@
                   </div>
                 </div>
           </div>
-          <div class="w-[619px] bottom-">
+          <div class="max-w-[619px] bottom-">
               <div class="bg-primary flex h-[270px] max-md:h-fit max-md:py-10 w-full items-center rounded-lg gap-x-4 p-5 max-md:flex-col max-md:justify-center">
-                  <img src="./img/img_photo.png" alt="Foto"  class="max-md:mb-4 mx-auto">
+                  <img src="./img/img_photo 3.png" alt="Foto" height="80" width="80" class="max-md:mb-4 mx-auto">
                   <div class="flex flex-col gap-y-2 max-w-[415px]">
                     <img src="img/icons/rate.svg" alt="rating" height="16" width="80" class="max-md:mx-auto">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
@@ -196,10 +194,10 @@
       
       <!-- Banner -->
       <section class="banner px-5 mt-40 mb-28 text-center">
-        <div class="w-full max-w-[1168px] h-[326px] mx-auto bg-blue flex flex-col justify-center items-center rounded-[13px] text-white px-5 max-sm:h-[400px]">
+        <div class="w-full max-w-[1168px] h-[326px] mx-auto bg-blue-cst flex flex-col justify-center items-center rounded-[13px] text-white px-5 max-sm:h-[400px]">
           <h2 class="mb-4 text-4xl font-bold max-sm:text-2xl">Sewa Mobil di (Lokasimu) Sekarang</h2>
           <p class="max-w-[468px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <button class="bg-[#5cb85f] text-white font-bold w-fit p-[10px] rounded-sm mt-8">Mulai Sewa Mobil</button>
+          <button class="bg-green-cst text-white font-bold w-fit p-[10px] rounded-sm mt-8">Mulai Sewa Mobil</button>
         </div>
       </section>
 
@@ -212,7 +210,7 @@
           </div>
 
           <div class="list-desc flex flex-col gap-y-5 col-span-2 ms-[132px] max-md:ms-0">
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-1" \>
@@ -229,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-2" \>
@@ -246,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-3" \>
@@ -263,7 +261,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-4" \>
@@ -280,7 +278,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-5" \>
@@ -297,7 +295,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative border border-solid rounded-md border-gray-custom px-6 pt-[14px]" >
+            <div class="relative border border-solid rounded-md border-gray-cst px-6 pt-[14px]" >
               <h6 class="mb-0">
                 <button class="relative flex items-center w-full text-left transition-all ease-in-out group cursor-pointer pe-10"
                   data-collapse-target="animated-collapse-6" \>
@@ -348,70 +346,17 @@
        </ul>
       </section>
       <section class="copyright">
-        <p>Copyright Binar 2022</p>
+        <p>Copyright MDH 2024</p>
         <h2 class="mt-5">Car Rental.</h2>
       </section>
     </div>
     </footer>
 
+    <script src="./js/jquery-utils.js"></script>
     <!-- Slick Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
-    <script>
-        $(document).ready(() => {
-
-        $('.content, #closeMenu').click(() => {
-          $('body').removeClass('overflow-y-hidden');
-          $('.sidebar').addClass('translate-x-72').removeClass('translate-x-0')
-          $('.overlay').removeClass('min-w-screen').addClass('w-0 -left-40')
-        });
-
-
-        $('#openMenu').click(() => {
-          $('body').addClass('overflow-y-hidden');
-          $('.sidebar').addClass('translate-x-0').removeClass('translate-x-72')
-          $('.overlay').addClass('min-w-screen').removeClass('w-0 -left-40')
-
-        });
-
-
-        $(window).resize(() => {
-           ($(window).width() >= 639) ? $('.overlay').addClass('w-0 -left-40') && 
-           $('body').removeClass('overflow-y-hidden') && 
-           $('.sidebar').addClass('translate-x-72').removeClass('translate-x-0')
-           : '';
-        });
-    
-        // Inisialisasi Slick Carousel
-        $('.carousel').slick({
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          centerMode: true,
-          variableWidth: true,
-          prevArrow:`
-                <button type="button" class="w-8 h-8  rounded-full absolute -bottom-14 right-1/2 me-4 transition-all border-[#C4C4C4] border-solid border hover:bg-[#5CB85F] hover:text-white hover:border-none">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-          `,
-          nextArrow: `
-          <button type="button" class="w-8 h-8 rounded-full absolute -bottom-14 left-1/2 ms-4 transition-all border-[#C4C4C4] border-solid border hover:bg-[#5CB85F] hover:text-white hover:border-none">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-          `,
-          responsive: [
-            {
-              breakpoint: 639,
-              settings: {
-                variableWidth: false,
-                centerMode: false,
-              }
-            }
-          ]
-        });
-      });
-    </script>
-    
     <!-- Material Tailwind -->
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+
   </body>
 </html>
